@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Digital Bookshelf & Reading Log - Mendokumentasikan perjalanan literasi Rohman dan Margi.">
+    <meta name="keywords" content="Rohman Firmandika, Margi, Reading Log, Digital Bookshelf, Book Review">
+    <meta name="author" content="Rohman & Margi">
+
+    <title>Our Digital Bookshelf</title>
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Our Digital Bookshelf">
+    <meta property="og:description" content="Mendokumentasikan perjalanan literasi Rohman dan Margi.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Parallax Blobs Context -->
+    <div class="blob-wrapper" id="blobWrapper">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="glass-nav sticky-nav">
+        <div class="nav-content">
+            <a href="#home" class="logo">Digital Bookshelf</a>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i data-feather="menu"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#currently-reading">Now Reading</a></li>
+                <li><a href="#reading-list">Reading List</a></li>
+                <li><a href="#target-list">Target List</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero section-scroll">
+            <div class="hero-content">
+                <h1 class="reveal-stagger"><br>Welcome to Our Reading Log</h1>
+                <p class="tagline reveal-stagger">Dokumentasi buku bacaan Rohman dan Margi.</p>
+            </div>
+
+            <!-- Scroll Down Arrow -->
+            <div class="scroll-down-container">
+                <a href="#currently-reading" class="scroll-down-btn reveal-stagger"
+                    aria-label="Scroll to Now Reading Section">
+                    <i data-feather="chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Currently Reading Section -->
+        <section id="currently-reading" class="section section-scroll mb-large">
+            <h2 class="section-title reveal-stagger">Now Reading</h2>
+            <div class="glass-card full-width-card reveal-stagger">
+                <div id="currently-reading-container" style="display: flex; justify-content: center; width: 100%;">
+                    <!-- Dynamic Currently Reading Content -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Reading List Section -->
+        <section id="reading-list" class="section section-scroll mb-large">
+            <h2 class="section-title reveal-stagger">Reading List</h2>
+            <div class="glass-card list-card reveal-stagger">
+                <div id="reading-list-container" class="bookshelf-grid">
+                    <!-- Dynamic content -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Target List Section -->
+        <section id="target-list" class="section section-scroll mb-large">
+            <h2 class="section-title reveal-stagger">Target List</h2>
+            <div class="glass-card list-card reveal-stagger">
+                <div id="target-list-container" class="bookshelf-grid">
+                    <!-- Dynamic content -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section section-scroll">
+            <h2 class="section-title reveal-stagger">Our Story</h2>
+            <div class="glass-card full-width-card reveal-stagger">
+                <div class="about-content">
+                    <div class="about-image-wrapper">
+                        <img src="assets/profile.png" alt="Rhopalocera" class="about-image"
+                            onerror="this.src='https://via.placeholder.com/400x400?text=Rhopalocera'">
+                    </div>
+                    <p class="about-narrative text-lead">
+                        "Membaca bukan hanya sekadar hobi bagi kami, melainkan sebuah rutinitas yang mendekatkan. Setiap
+                        malam, kami meluangkan waktu untuk membaca buku yang sama, mendiskusikan berbagai perspektif,
+                        dan membagikan ulasan kami. Website 'Rak Buku Digital' ini kami buat sebagai jurnal interaktif
+                        untuk merekam setiap halaman dan pelajaran yang telah kami lalui bersama."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-scroll mb-large">
+            <h2 class="section-title reveal-stagger">Connect With Us</h2>
+            <div class="glass-card contact-card reveal-stagger">
+                <div class="dual-contact-wrapper">
+                    <a href="https://www.instagram.com/rohmanfirmandika/" target="_blank"
+                        class="instagram-btn magnetic reveal-stagger">
+                        <i data-feather="instagram"></i>
+                        <span>@rohmanfirmandika</span>
+                    </a>
+                    <a href="https://www.instagram.com/dwimargias/" target="_blank"
+                        class="instagram-btn magnetic reveal-stagger" style="transition-delay: 0.1s;">
+                        <i data-feather="instagram"></i>
+                        <span>@dwimargias</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="glass-footer">
+            <p>&copy; 2026 Rohman & Margi. Crafted with love.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
