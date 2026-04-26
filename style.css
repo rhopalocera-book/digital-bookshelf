@@ -477,7 +477,8 @@ main {
 
 .cr-progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #F9A8D4, #EC4899); /* Pastel Pink to Deep Pink */
+    background: linear-gradient(90deg, #F9A8D4, #EC4899);
+    /* Pastel Pink to Deep Pink */
     border-radius: 4px;
     transition: width 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -911,15 +912,18 @@ main {
 }
 
 .book-status.completed {
-    background: rgba(186, 230, 253, 0.5); /* Sky blue tint for completed */
+    background: rgba(186, 230, 253, 0.5);
+    /* Sky blue tint for completed */
 }
 
 .book-status.reading {
-    background: rgba(233, 213, 255, 0.5); /* Purple tint for reading */
+    background: rgba(233, 213, 255, 0.5);
+    /* Purple tint for reading */
 }
 
 .book-status.target {
-    background: rgba(254, 215, 170, 0.5); /* Orange tint for target */
+    background: rgba(254, 215, 170, 0.5);
+    /* Orange tint for target */
 }
 
 .progress-section {
@@ -1270,12 +1274,17 @@ main {
 
     .full-width-card,
     .bento-item,
-    .list-card {
-        padding: 30px;
+    .contact-card {
+        padding: 30px 20px;
         border-radius: 24px;
     }
 
-    .bento-grid {
+    .list-card {
+        padding: 0;
+    }
+
+    .bento-grid,
+    .bookshelf-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1289,11 +1298,6 @@ main {
         text-align: center;
     }
 
-    .currently-reading-badge {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
     .cr-cover {
         width: 120px;
     }
@@ -1301,5 +1305,11 @@ main {
     .dual-contact-wrapper {
         flex-direction: column;
         gap: 16px;
+        width: 100%;
+    }
+
+    .instagram-btn {
+        width: 100%;
+        justify-content: center;
     }
 }
