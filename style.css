@@ -1173,10 +1173,10 @@ main {
     transform: translateY(-5px) scale(1.02);
 }
 
-.instagram-btn i {
+.instagram-btn svg, .instagram-btn i {
     width: 24px;
     height: 24px;
-}
+    flex-shrink: 0;}
 
 /* --- Custom Animations for Contact Section --- */
 .fly-from-bottom-left {
