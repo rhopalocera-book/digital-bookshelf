@@ -3,7 +3,7 @@
     "title": "It`s okay, you will be fine",
     "author": "Rizal Faoji ",
     "cover": "assets/books/its-okay.jpg",
-    "progress": 20,
+    "progress": 50,
     "status": "Reading"
   },
   "readingList": [
@@ -12,7 +12,7 @@
       "author": "Rizal Faoji",
       "cover": "assets/books/its-okay.jpg",
       "status": "Reading",
-      "progress": 20,
+      "progress": 50,
       "reviews": {
         "rohman": {
           "rating": "10/10",
